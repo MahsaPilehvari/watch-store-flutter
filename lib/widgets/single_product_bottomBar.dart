@@ -6,9 +6,9 @@ import 'package:watch_store/resources/dimensions.dart';
 import 'package:watch_store/resources/strings.dart';
 
 class SingleProductBottombar extends StatelessWidget {
-  final discount;
-  final price;
-  final oldPrice;
+  final int discount;
+  final int price;
+  final int oldPrice;
   const SingleProductBottombar({
     super.key,
     this.discount = 0,

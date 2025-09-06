@@ -22,7 +22,6 @@ class ShoppingCartItem extends StatelessWidget {
         children: [
           Expanded(
             child: Column(
-              // mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 FittedBox(
@@ -94,7 +93,7 @@ class ShoppingCartItem extends StatelessWidget {
                         return const Center(child: CircularProgressIndicator());
                       },
                       errorBuilder: (ctx, err, stack) {
-                        return const Placeholder(); // یا آیکون خطا
+                        return const Placeholder();
                       },
                     )
                     : const Placeholder(),

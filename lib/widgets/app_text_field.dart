@@ -32,7 +32,6 @@ class AppTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return SizedBox(
-      // height: size.height * 0.2,
       width: size.width * .75,
       child: Column(
         children: [

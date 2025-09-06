@@ -18,7 +18,7 @@ import 'package:watch_store/widgets/main_button.dart';
 import 'package:watch_store/widgets/register_screen_appBar.dart';
 
 class RegisterScreen extends StatefulWidget {
-  RegisterScreen({super.key});
+  const RegisterScreen({super.key});
 
   @override
   State<RegisterScreen> createState() => _RegisterScreenState();

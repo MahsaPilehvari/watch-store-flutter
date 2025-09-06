@@ -19,7 +19,6 @@ class ProductListBloc extends Bloc<ProductListEvent, ProductListState> {
         final productList = await _iProductRepo.getAllByCtegory(
           event.categoryId,
         );
-        // print('>>> category result: ${productList}');
         emit(
           ProductListLoaded(
             productList: productList,
@@ -75,23 +74,18 @@ class ProductListBloc extends Bloc<ProductListEvent, ProductListState> {
 
     on<ProductListBySort>((event, emit) async {
       final brandTitleList = await _iProductRepo.getBrands();
-      // print('>>> sort event received: ${event.sort}');
-      // print('.....URL: ${event.sort.toParam()}');
       emit(ProductListLoading());
       try {
         final productList = await _iProductRepo.getSorted(
           event.productsort.toParam(),
         );
-        // print('>>> sort result: ${productList}');
         emit(
           ProductListLoaded(
             productList: productList,
             brandTitleList: brandTitleList,
           ),
         );
-        // print('#########Pro.List for SortedTypes was Loaded################');
       } catch (e) {
-        // print('>>> sort error: $e');
         emit(ProductListError(message: 'Pro.ListBySort Error: $e'));
       }
     });

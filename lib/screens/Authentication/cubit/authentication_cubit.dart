@@ -9,7 +9,6 @@ part 'authentication_state.dart';
 
 class AuthenticationCubit extends Cubit<AuthenticationState> {
   AuthenticationCubit() : super(AuthenticationInitial()) {
-    // emit(LoggedInState());
     SharedPreferencesManager().getString(SharedPreferencesConstant.token) ==
             null
         ? emit(LoggedOutState())
@@ -49,11 +48,6 @@ class AuthenticationCubit extends Cubit<AuthenticationState> {
               "token",
               value.data["data"]["token"],
             );
-            // final token = SharedPreferencesManager().getString(
-            //   SharedPreferencesConstant.token,
-            // );
-
-            // debugPrint("####Auth Token: $token");
             if (value.data["data"]["is_registered"]) {
               emit(VerifiedRegisteredState());
             } else {
@@ -64,7 +58,4 @@ class AuthenticationCubit extends Cubit<AuthenticationState> {
       emit(ErrorState(message: "Error in Verifying Code: $e"));
     }
   }
-
-  // void logIn() => emit(LoggedInState());
-  // void logOut() => emit(LoggedOutState());
 }

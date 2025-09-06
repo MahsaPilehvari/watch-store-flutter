@@ -67,7 +67,7 @@ class _ProductItemState extends State<ProductItem> {
 
   @override
   void dispose() {
-    _timer?.cancel(); // لغو تایمر وقتی ویجت از درخت حذف شد
+    _timer?.cancel();
     super.dispose();
   }
 

@@ -128,7 +128,7 @@ class HomeScreen extends StatelessWidget {
                           ],
                         ),
                       ),
-                      // Dimensions.large.height,
+
                       Padding(
                         padding: const EdgeInsets.all(Dimensions.large),
                         child: ClipRRect(
@@ -138,7 +138,7 @@ class HomeScreen extends StatelessWidget {
                           child: Image.network(state.home.banner!.image),
                         ),
                       ),
-                      // Dimensions.large.height,
+
                       SingleChildScrollView(
                         scrollDirection: Axis.horizontal,
                         reverse: true,

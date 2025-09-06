@@ -15,8 +15,7 @@ class MainButtton extends StatelessWidget {
       height: size.height * .06,
       width: size.width * .75,
       child: ElevatedButton(
-        style: AppButtonStyle.mainButtonStyle,
-        // style: mainButtonStyle(),
+        style: mainButtonStyle(),
         onPressed: onPressed,
         child: Text(text, style: LightAppTextStyle.mainButton),
       ),

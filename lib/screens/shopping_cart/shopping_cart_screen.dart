@@ -1,4 +1,4 @@
-// ignore_for_file: type_literal_in_constant_pattern
+// ignore_for_file: type_literal_in_constant_pattern, use_build_context_synchronously
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -105,8 +105,6 @@ class _ShoppingCartScreenState extends State<ShoppingCartScreen> {
                           else if (state is ProfileAddressLoaded)
                             Text(
                               textDirection: TextDirection.rtl,
-                              // maxLines: 2,
-                              // overflow: TextOverflow.ellipsis,
                               state.selectedAddress!,
                               style: LightAppTextStyle.title.copyWith(
                                 fontSize: 12,

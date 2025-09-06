@@ -68,7 +68,6 @@ class _ProductListScreenState extends State<ProductListScreen> {
                   setState(() {
                     _selectedSort = productsort;
                   });
-                  // BlocProvider.of<ProductListBloc>(context).add(ProductListBySort(sortType: sortType),);
                   context.read<ProductListBloc>().add(
                     ProductListBySort(productsort: productsort),
                   );
@@ -78,7 +77,6 @@ class _ProductListScreenState extends State<ProductListScreen> {
                       PopupMenuItem(
                         value: ProductSort.cheapest,
                         child: Text(ProductSort.cheapest.toText()),
-                        // child: Text('ارزان‌ترین'),
                       ),
                       PopupMenuItem(
                         value: ProductSort.mostExpensive,

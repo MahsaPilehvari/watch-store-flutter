@@ -9,7 +9,6 @@ class SurfaceContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Size size = MediaQuery.sizeOf(context);
     return Container(
       margin: EdgeInsets.fromLTRB(
         Dimensions.medium,

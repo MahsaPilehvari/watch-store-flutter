@@ -74,12 +74,10 @@ class SingleProductScreen extends StatelessWidget {
                         Image.network(
                           state.productDetails.image!,
                           fit: BoxFit.cover,
-                          // width: double.infinity,
                           scale: 1.3,
                         ),
                         Container(
                           width: double.infinity,
-                          // height: size.height / 2,
                           padding: EdgeInsets.all(Dimensions.small),
                           margin: EdgeInsets.all(Dimensions.small),
                           decoration: BoxDecoration(
@@ -352,82 +350,3 @@ class Review extends StatelessWidget {
     );
   }
 }
-
-
-
-
-// Container(
-//                             color: Color.fromARGB(255, 255, 255, 255),
-//                             padding: EdgeInsets.symmetric(
-//                               horizontal: Dimensions.medium,
-//                             ),
-//                             height: 50,
-//                             child: Row(
-//                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//                               children: [
-//                                 Column(
-//                                   crossAxisAlignment: CrossAxisAlignment.start,
-//                                   children: [
-//                                     Text(
-//                                       "${state.productDetails.price!.separateWithColon} تومان",
-//                                       style: LightAppTextStyle.title,
-//                                     ),
-//                                     Visibility(
-//                                       visible:
-//                                           state.productDetails.discount! > 0
-//                                               ? true
-//                                               : false,
-//                                       child: Text(
-//                                         "${state.productDetails.discountPrice!.separateWithColon} تومان",
-//                                         style: LightAppTextStyle.oldPrice,
-//                                       ),
-//                                     ),
-//                                   ],
-//                                 ),
-//                                 Dimensions.medium.width,
-//                                 Visibility(
-//                                   visible:
-//                                       state.productDetails.discount! > 0
-//                                           ? true
-//                                           : false,
-//                                   child: Container(
-//                                     padding: EdgeInsets.all(
-//                                       Dimensions.small * 0.5,
-//                                     ),
-//                                     decoration: BoxDecoration(
-//                                       borderRadius: BorderRadius.circular(
-//                                         Dimensions.small * 1.5,
-//                                       ),
-//                                       color: Color.fromARGB(249, 246, 7, 7),
-//                                     ),
-//                                     child: Text(
-//                                       "${state.productDetails.discount!}%",
-//                                       style: LightAppTextStyle.mainButtonText,
-//                                     ),
-//                                   ),
-//                                 ),
-//                                 GestureDetector(
-//                                   onTap: () {
-//                                     BlocProvider.of<CartBloc>(context).add(
-//                                       AddToCartEvent(state.productDetails.id!),
-//                                     );
-//                                   },
-//                                   child: Container(
-//                                     padding: EdgeInsets.all(Dimensions.small),
-//                                     width: size.width / 2.9,
-//                                     decoration: BoxDecoration(
-//                                       color: LightAppColors.primaryColor,
-//                                       borderRadius: BorderRadius.circular(
-//                                         Dimensions.small,
-//                                       ),
-//                                     ),
-//                                     child: Text(
-//                                       AppStrings.addToBasket,
-//                                       style: LightAppTextStyle.mainButtonText
-//                                           .copyWith(fontSize: 14),
-//                                     ),
-//                                   ),
-//                                 ),
-//                               ],
-//                             ),
-//                           ),

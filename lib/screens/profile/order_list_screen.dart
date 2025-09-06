@@ -33,11 +33,6 @@ class OrderListScreen extends StatelessWidget {
                 icon: SvgPicture.asset(Assets.svg.leftArrow, width: 8),
               ),
               Text(" $status"),
-              // status == 'in process'
-              //     ? Text("لیست سفارشات در حال ارسال")
-              //     : status == 'cancelled'
-              //     ? Text('لیست سفارشات لغو شده')
-              //     : Text('لیست سفارشات تحویل شده'),
             ],
           ),
         ),

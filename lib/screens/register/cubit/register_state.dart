@@ -35,23 +35,3 @@ class PickedLocationState extends RegisterState {
   @override
   List<Object?> get props => [location];
 }
-
-
-// @immutable
-// sealed class RegisterState {}
-
-// final class RegisterInitial extends RegisterState {}
-
-// final class LoadingState extends RegisterState {}
-
-// final class ErrorState extends RegisterState {
-//   final String message;
-//   ErrorState({required this.message});
-// }
-
-// final class OkResponseState extends RegisterState {}
-
-// final class LocationPickedState extends RegisterState {
-//   final GeoPoint? location;
-//   LocationPickedState({required this.location});
-// }
