@@ -1,16 +1,33 @@
-# watch_store
+#  Watch Store App  
 
-A new Flutter project.
+A sample e-commerce mobile application built with **Flutter** and **BLoC** state management.  
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## Features  
+- User registration and login  
+- User profile management  
+- Product list display  
+- Product categorization and sorting  
+- Data exchange with server via **REST API**  
+- Responsive UI design  
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+##  Technologies & Tools  
+- Flutter (Dart)  
+- BLoC State Management  
+- REST API Integration  
+- Git & GitHub  
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+
+##  Getting Started  
+To run this project locally:  
+
+```bash
+git clone https://github.com/MahsaPilehvari/watch-store-flutter.git
+cd watch-store-flutter
+flutter pub get
+flutter run
